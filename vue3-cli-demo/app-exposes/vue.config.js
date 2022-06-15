@@ -17,8 +17,10 @@ module.exports = defineConfig({
         name: 'app_exposes',
         filename: 'remoteEntry.js',
         exposes: {
+          './App.vue': './src/App.vue',
           './HelloWorld.vue': './src/components/HelloWorld.vue',
           './AboutView.vue': './src/views/AboutView.vue',
+          './HomeView.vue': './src/views/HomeView.vue',
         },
         shared: {
           vue: {
