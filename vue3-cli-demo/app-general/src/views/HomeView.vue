@@ -1,5 +1,5 @@
 <template>
-  <h1>App-General Home.vue</h1>
+  <h1>App-General HomeView.vue</h1>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
 
