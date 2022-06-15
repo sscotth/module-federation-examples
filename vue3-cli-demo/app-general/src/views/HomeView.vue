@@ -1,11 +1,6 @@
 <template>
   <h1>App-General HomeView.vue</h1>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-
-    <div v-if="isLoadingComponent">Loading HelloWorld.vue</div>
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <HomeView />
 </template>
 
 <script lang="ts" setup>
@@ -13,7 +8,7 @@ import { defineAsyncComponent, ref } from 'vue';
 
 const isLoadingComponent = ref(true);
 
-const HelloWorld = defineAsyncComponent(() => import('app_exposes/HelloWorld.vue')
+const HomeView = defineAsyncComponent(() => import('app_exposes/HomeView.vue')
   .finally(() => {
     isLoadingComponent.value = false;
   }));
