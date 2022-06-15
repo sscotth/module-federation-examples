@@ -1,4 +1,5 @@
 <template>
+  <h1>App-Exposes HelloWorld.vue</h1>
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>

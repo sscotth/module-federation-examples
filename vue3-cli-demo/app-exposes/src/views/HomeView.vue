@@ -1,4 +1,5 @@
 <template>
+  <h1>App-Exposes HomeView.vue</h1>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
