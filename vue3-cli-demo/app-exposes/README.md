@@ -6,10 +6,10 @@ Ignore path `/auto/`
 
 ```bash
   App running at:
-  - Local:   http://localhost:8082/auto/
+  - Local:   http://localhost:8282/auto/
 ```
 
-http://localhost:8082/ - is actual
+http://localhost:8282/ - is actual
 ([fix here](https://github.com/vuejs/vue-cli/pull/7005)).
 
 ## Project setup
