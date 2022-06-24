@@ -1,5 +1,4 @@
 <template>
-  <h1>App-General HomeView.vue</h1>
   <HomeView />
 </template>
 

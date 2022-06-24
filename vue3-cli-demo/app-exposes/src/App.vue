@@ -1,6 +1,5 @@
 <template>
   <div id="vue_app_root">
-    <h1>App-Exposes App.vue</h1>
     <h2>{{ message }}</h2>
     <nav>
       <router-link to="/">Home</router-link> |
