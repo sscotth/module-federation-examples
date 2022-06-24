@@ -1,14 +1,25 @@
 <template>
-  <h1>App-Exposes App.vue</h1>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="vue_app_root">
+    <h1>App-Exposes App.vue</h1>
+    <h2>{{ message }}</h2>
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </nav>
+    <router-view />
+  </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return { message: 'Hello From Vue!' };
+  },
+};
+</script>
+
 <style>
-#app {
+#vue_app_root {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
