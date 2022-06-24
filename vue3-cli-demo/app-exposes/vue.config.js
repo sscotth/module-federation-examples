@@ -7,20 +7,31 @@ module.exports = defineConfig({
       entry: './src/index.ts',
     },
   },
-  publicPath: 'auto',
+  publicPath: 'http://localhost:8282/',
   configureWebpack: {
     optimization: {
       splitChunks: false,
+    },
+    devServer: {
+      headers: { 'Access-Control-Allow-Origin': '*' },
     },
     plugins: [
       new webpack.container.ModuleFederationPlugin({
         name: 'app_exposes',
         filename: 'remoteEntry.js',
+        library: { type: 'umd', name: 'app_exposes' },
         exposes: {
+          // For vue only imports
           './App.vue': './src/App.vue',
           './HelloWorld.vue': './src/components/HelloWorld.vue',
           './AboutView.vue': './src/views/AboutView.vue',
           './HomeView.vue': './src/views/HomeView.vue',
+
+          // For react imports
+          './App': './src/bootstrap/App.bootstrap.ts',
+          './HelloWorld': './src/bootstrap/HelloWorld.bootstrap.ts',
+          './AboutView': './src/bootstrap/AboutView.bootstrap.ts',
+          './HomeView': './src/bootstrap/HomeView.bootstrap.ts',
         },
         shared: {
           vue: {
