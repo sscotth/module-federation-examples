@@ -26,12 +26,14 @@ module.exports = defineConfig({
           './HelloWorld.vue': './src/components/HelloWorld.vue',
           './AboutView.vue': './src/views/AboutView.vue',
           './HomeView.vue': './src/views/HomeView.vue',
+          './VueButton.vue': './src/components/VueButton.vue',
 
           // For react imports
           './App': './src/bootstrap/App.bootstrap.ts',
           './HelloWorld': './src/bootstrap/HelloWorld.bootstrap.ts',
           './AboutView': './src/bootstrap/AboutView.bootstrap.ts',
           './HomeView': './src/bootstrap/HomeView.bootstrap.ts',
+          './VueButton': './src/bootstrap/VueButton.bootstrap.ts',
         },
         shared: {
           vue: {
