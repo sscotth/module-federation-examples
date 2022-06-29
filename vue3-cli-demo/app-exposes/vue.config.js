@@ -7,7 +7,7 @@ module.exports = defineConfig({
       entry: './src/index.ts',
     },
   },
-  publicPath: 'http://localhost:8282/',
+  publicPath: 'http://localhost:8085/',
   configureWebpack: {
     optimization: {
       splitChunks: false,
