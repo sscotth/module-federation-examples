@@ -7,7 +7,8 @@ module.exports = defineConfig({
       entry: './src/index.ts',
     },
   },
-  publicPath: 'http://localhost:8085/',
+  // !!!! CHANGE ME !!!!
+  publicPath: 'https://sscotth.github.io/vuetest/',
   configureWebpack: {
     optimization: {
       splitChunks: false,
